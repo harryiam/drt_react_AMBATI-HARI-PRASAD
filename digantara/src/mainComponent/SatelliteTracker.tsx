@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Loader, AlertCircle } from 'lucide-react';
 import VirtualList from "../components/VirtualList";
+import PaginatedTableList from '../components/PaginatedTableList';
 import SelectedList from '../components/SelectedList';
 import FiltersSection from '../components/FiltersSection';
 import SearchSection from '../components/SearchSection';
@@ -281,6 +282,14 @@ const SatelliteTracker: React.FC = () => {
             sortField={sortField}
             sortDirection={sortDirection}
           />
+        //   <PaginatedTableList
+        //   items={sortedSatellites}
+        //   selectedIds={selectedSatellites}
+        //   onSelectionChange={handleSelectionChange}
+        //   onSort={handleSort}
+        //   sortField={sortField}
+        //   sortDirection={sortDirection}
+        // />
         )}
 
         {selectedSatellites.size > 0 && (
